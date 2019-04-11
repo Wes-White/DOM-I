@@ -9,7 +9,7 @@ const siteContent = {
     "img-src": "img/logo.png"
   },
   "cta": {
-    "h1": "DOM Is Awesome",
+    "h1": "DOM \n Is \n Awesome",
     "button": "Get Started",
     "img-src": "img/header-img.png"
   },
@@ -95,3 +95,9 @@ contactContent[2].textContent = siteContent.contact['email']
 let foot = document.querySelector('footer')
 foot.textContent = siteContent.footer.copyright
 
+
+//Change Nav to green text 
+
+menu.forEach(function (anchor){
+  anchor.style.color = 'green'
+})
