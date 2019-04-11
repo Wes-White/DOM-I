@@ -101,3 +101,17 @@ foot.textContent = siteContent.footer.copyright
 menu.forEach(function (anchor){
   anchor.style.color = 'green'
 })
+
+// adding new elements to nav 
+let firstAnchor = document.createElement('a')
+firstAnchor.setAttribute('href', '#')
+firstAnchor.textContent = 'Home'
+
+let lastAnchor = document.createElement('a')
+lastAnchor.setAttribute('href', '#')
+lastAnchor.textContent = 'Extras'
+
+
+let navigation = document.querySelector('nav')
+navigation.prepend(firstAnchor)
+navigation.append(lastAnchor)
